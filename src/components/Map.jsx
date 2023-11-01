@@ -90,7 +90,7 @@ function DetectClick() {
   useMapEvents({
     click: (e) => {
       const { lat, lng } = e.latlng;
-      navigate(`form?${lat}&&${lng}`);
+      navigate(`form?lat=${lat}&lng=${lng}`);
     },
   });
   return null;
